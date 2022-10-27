@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_denniz.mk
+    $(LOCAL_DIR)/twrp_CPH2293.mk

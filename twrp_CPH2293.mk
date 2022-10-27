@@ -18,22 +18,22 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Inherit from denniz device
-$(call inherit-product, device/oneplus/denniz/device.mk)
+# Inherit from CPH2293 device
+$(call inherit-product, device/oppo/CPH2293/device.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := denniz
-PRODUCT_NAME := twrp_denniz
-PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := DN2101
-PRODUCT_MANUFACTURER := OnePlus
+PRODUCT_DEVICE := CPH2293
+PRODUCT_NAME := twrp_CPH2293
+PRODUCT_BRAND := OPPO
+PRODUCT_MODEL := OP52E1L1
+PRODUCT_MANUFACTURER := OPPO
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=OP515BL1 \
-    PRODUCT_NAME=DN2101IND
+    PRODUCT_DEVICE=OP52E1L1 \
+    PRODUCT_NAME=CPH2293T2
 
 # HACK: Set older build date
 PRODUCT_PROPERTY_OVERRIDES += \
